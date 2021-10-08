@@ -1,0 +1,584 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@font-face {
+  font-family: "Tungsten";
+  src: url("../assets/fonts/Tungsten.ttf") format("truetype"), url("../assets/fonts/Tungsten.svg#Tungsten") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-size: 16px !important;
+  line-height: 1.5;
+  color: #000;
+  background: #e9edf2;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif !important;
+  min-width: 100% !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold !important;
+  margin: unset;
+  line-height: 1.4;
+}
+
+h1,
+.h1 {
+  font-size: 4.2em !important;
+}
+
+h2,
+.h2 {
+  font-size: 1.8em !important;
+}
+
+h3,
+.h3 {
+  font-size: 1.5em !important;
+}
+
+h4,
+.h4 {
+  font-size: 1.3em !important;
+}
+
+h5,
+.h5 {
+  font-size: 1.1em !important;
+}
+
+h6,
+.h6 {
+  font-size: 1em !important;
+}
+
+p,
+.p,
+.psmall,
+.pxsmall,
+.pxxsmall {
+  margin: 0;
+}
+
+p,
+.p {
+  font-size: 1em !important;
+}
+
+.psmall {
+  font-size: 0.9em !important;
+}
+
+.pxsmall {
+  font-size: 0.8em !important;
+}
+
+.pxxsmall {
+  font-size: 0.7em !important;
+}
+
+.tungsten {
+  font-family: "Tungsten";
+}
+
+.text-primary {
+  color: #38328c !important;
+}
+
+.btn-primary {
+  background-color: #38328c !important;
+}
+
+#home {
+  background-image: url(../assets/media/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.countdown {
+  background: rgba(14, 26, 41, 0.7);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  border-radius: 20px 20px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  padding: 0 5%;
+  height: 20%;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.btn-more {
+  width: 10%;
+  padding: 10px 0px;
+  border-radius: 6px;
+  background-color: #8bdc73;
+  color: #fff;
+}
+
+.btn-more:hover {
+  color: #fff;
+  background-color: #7aec57;
+}
+
+.content-speaker {
+  display: none;
+}
+
+.img-earth {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
+
+.earth-full {
+  width: 60%;
+  margin-right: 5%;
+}
+
+.banner-content {
+  height: calc(100vh - 60px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-info {
+  text-align: left;
+}
+
+#client {
+  padding: 40px 0;
+}
+
+#client .client-content {
+  width: 100%;
+  overflow-x: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#client .client-content img {
+  height: 100px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.client-content::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  background-color: red;
+}
+
+.client-content::-webkit-scrollbar {
+  -webkit-box-shadow: inset 0 0 6px #ff6550;
+  width: 4px;
+  height: 0px !important;
+}
+
+.client-content::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px #ff6550;
+  background-color: #ed1c24;
+}
+
+.webinar {
+  background-image: url(../assets/media/bg-webinar.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+}
+
+.webinar .video-webinar {
+  width: 100%;
+  height: 700px;
+}
+
+.webinar .video-webinar video,
+.webinar .video-webinar iframe {
+  width: 100%;
+  height: 100%;
+}
+
+#speaker {
+  background-color: #fff;
+}
+
+.speaker-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+.speaker-list .spekaer-img {
+  position: absolute;
+}
+
+.speaker-list .spekaer-img {
+  width: 183px;
+  height: 183px;
+  border-radius: 50%;
+}
+
+.speaker-list .spekaer-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+#agenda {
+  background-image: url(../assets/media/bg-agenda.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+
+#agenda .agenda-list {
+  border-bottom: 1px solid #fff;
+  padding: 40px;
+}
+
+.profile {
+  border-radius: 50%;
+}
+
+.profile.small {
+  width: 36px;
+  height: 36px;
+}
+
+.profile.small img {
+  width: auto;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.webinar-earth {
+  position: absolute;
+  top: -4%;
+  right: 0;
+  height: 126%;
+}
+
+.btn-regis {
+  background-color: #8bdc73;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.webinar-logo {
+  width: 160px;
+}
+
+.logo-event {
+  width: 170px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 25px;
+  right: 25px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: none;
+}
+
+.swiper-button-prev {
+  left: auto;
+  right: 90px;
+}
+
+.nav-pills .nav-link.active {
+  color: #fff;
+  background-color: #8edd74 !important;
+}
+
+.nav-pills .nav-link {
+  background-color: #fff !important;
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #8b8b8b;
+  text-decoration: none;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  border-radius: 0;
+}
+
+#timer {
+  font-size: 3em;
+  font-weight: 100;
+  color: white;
+  text-shadow: 0 0 20px #48c8ff;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#timer div {
+  display: inline-block;
+  font-family: "Tungsten";
+  font-weight: bold;
+}
+
+#timer div span {
+  color: #b1cdf1;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "roboto";
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 992px) {
+  .title {
+    font-size: 40px !important;
+  }
+  .speaker-list {
+    width: 100%;
+  }
+  .logo {
+    width: 240px;
+  }
+  .webinar .video-webinar {
+    height: 400px;
+  }
+  .logo-present {
+    width: 170px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 12px !important;
+  }
+  .banner-info {
+    text-align: center;
+  }
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 40px;
+  }
+  .swiper-button-next img,
+  .swiper-button-prev img {
+    width: 100%;
+  }
+  .speaker-list {
+    width: 90%;
+  }
+  .webinar {
+    background-image: url(../assets/media/mobile-webinar.jpg);
+  }
+  .speaker-list .spekaer-img {
+    width: 130px;
+    height: 130px;
+  }
+  .btn-yt,
+  .btn-fb {
+    width: 140px;
+  }
+  .banner-content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-top: 30px;
+  }
+  .countdown {
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 90%;
+  }
+  #client .client-content img {
+    height: 70px;
+    width: auto;
+    margin-right: 10px;
+  }
+  .webinar .video-webinar {
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .speaker-list .spekaer-img {
+    width: 100px;
+    height: 100px;
+  }
+  .btn-yt,
+  .btn-fb {
+    width: 80px;
+  }
+  #agenda {
+    background-image: url(../assets/media/bg-agenda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    min-height: 100vh;
+  }
+  #agenda .agenda-list {
+    border-bottom: 1px solid #fff;
+    padding: 40px 10px;
+  }
+  .nav-pills .nav-item {
+    width: 32%;
+  }
+  .logo {
+    width: 180px;
+  }
+  .title {
+    font-size: 30px !important;
+  }
+  #timer {
+    font-size: 1.5em;
+    font-weight: 100;
+    color: white;
+    text-shadow: 0 0 20px #48c8ff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  #timer div {
+    display: inline-block;
+    font-family: "Tungsten";
+    font-weight: bold;
+  }
+  #timer div span {
+    color: #b1cdf1;
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: "roboto";
+    text-transform: uppercase;
+  }
+  .banner-content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .webinar-earth {
+    position: absolute;
+    top: -4%;
+    right: -24%;
+    height: 126%;
+  }
+  .webinar .video-webinar {
+    height: auto;
+  }
+}
+/*# sourceMappingURL=index.css.map */
